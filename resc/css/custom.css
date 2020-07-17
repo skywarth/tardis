@@ -1,0 +1,92 @@
+.speech {
+    position: relative;
+    font-family: arial;
+    font-size: 1.1em;
+    background: #444;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.bottom::after {
+    /* [THESE WILL CREATE THE TRIANGLE] */
+    content: '';
+    border: 20px solid transparent;
+    border-top-color: #444;
+    border-bottom: 0;
+    /* [THESE WILL POSITION THE TRIANGLE] */
+    position: absolute;
+    bottom: -10px;
+    left: 85%;
+    margin-left: -20px;
+}
+
+.borderGrey{
+    border-color: grey;
+    border-width: 2px;
+    border-style: solid;
+}
+
+
+.midSquare{
+
+    padding:1.5rem;
+}
+
+.subText{
+    color:#369dd5;
+    font-style: italic;
+}
+
+
+#mainSearchBar {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+.searchButton{
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    background: #0b7dda;
+}
+
+
+.searchWrapper{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+
+
+
+
+
+
+
+
+
+.cardImg{
+    height: 20vh;
+    object-fit: cover;
+}
+
+
+
+
