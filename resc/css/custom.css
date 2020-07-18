@@ -74,6 +74,59 @@
 }
 
 
+
+
+
+
+
+
+
+
+.cardImg{
+    height: 20vh;
+    object-fit: cover;
+}
+
+
+body  {
+    background-image: url("../../img/grocery.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+}
+
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    padding-top: 0.75rem;
+}
+
+.btn-circle:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.scrollIcon{
+    vertical-align: 30%;
+    font-size: 3rem;
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.stickyWrapper{
+    position: sticky;
+    position: -webkit-sticky;
+    top:85%;
+    /*margin-left:47.7%;*/
+    margin-left:5%;
+    z-index: 101;
+    height: 0rem;
+}
+
+
 /*
 MOBILE START
                   _     _ _
@@ -102,6 +155,12 @@ and (min-width : 1824px) {
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
     /* Styles */
+    .stickyWrapper{
+        margin-left: 42% !important;
+    }
+    .cardImg{
+        height: 15vh !important;
+    }
 }
 
 /* old Smartphones (landscape) ----------- */
@@ -175,6 +234,7 @@ and (orientation : portrait) {
 and (min-device-width : 480px)
 and (max-device-width : 800px) {
     /* Styles */
+
 }
 
 /* Desire + Galaxy S2 (landscape) ----------- */
@@ -184,6 +244,7 @@ and (max-device-width : 820px)
 and (orientation : landscape) {
     /* Styles */
 
+
 }
 
 /* Desire + Galaxy S2 (portrait) ----------- */
@@ -192,55 +253,6 @@ and (min-device-width : 480px)
 and (max-device-width : 800px)
 and (orientation : portrait) {
     /* Styles */
+
 }
 
-
-
-
-
-
-
-
-
-
-.cardImg{
-    height: 15vh;
-    object-fit: cover;
-}
-
-
-body  {
-    background-image: url("../../img/grocery.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    backdrop-filter: blur(3px);
-}
-
-
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    padding-top: 0.75rem;
-}
-
-.btn-circle:hover {
-    background: rgba(255,255,255,0.1);
-}
-
-.scrollIcon{
-    vertical-align: 30%;
-    font-size: 3rem;
-    text-decoration: none;
-    color:whitesmoke;
-}
-
-.stickyWrapper{
-    position: sticky;
-    position: -webkit-sticky;
-    top:85%;
-    margin-left:47.7%;
-    z-index: 101;
-}
