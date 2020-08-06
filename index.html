@@ -6,10 +6,16 @@
 
     <link rel="stylesheet" href="resc/css/custom.css">
     <meta charset="UTF-8">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#51cecc">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#51cecc">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#51cecc">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Anasayfa - Tardis</title>
     <script type="module" src="main.js"></script>
     <script src="resc/js/bootstrap/bootstrap.min.js"></script>
     <link rel="stylesheet" href="resc/css/FA/all.min.css">
@@ -24,6 +30,39 @@
 
 
 <body class="grassBG3">
+
+
+<nav class="navbar navbar-expand-lg navbar-mainbg">
+    <a class="navbar-brand navbar-logo ml-5 " href="#">TARDIS</a>
+    <button class="navbar-toggler mr-5 mr-md-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-0  mr-md-5">
+            <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+            <li class="nav-item">
+                <a class="nav-link" href="/index.html"><i class="fas fa-home"></i><span class="pl-2">Anasayfa</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/process.html"><i class="fas fa-route"></i><span class="pl-2">Sipariş Takip</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="fas fa-medal"></i><span class="pl-2">Ayın Üreticileri</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="fas fa-calendar-alt"></i><span class="pl-2">Hasat Takvimi</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="fas fa-heart"></i><span class="pl-2">Favorilerim</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="fas fa-question-circle"></i><span class="pl-2">Destek</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
 <div class="stickyWrapper stickyWrapper2">
 
 <a href="#goToBottom" id="goToBottom" class="btn btn-circle">
