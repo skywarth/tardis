@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 .speech {
     position: relative;
     font-family: arial;
@@ -62,6 +66,7 @@
     font-weight: bolder;
     color: whitesmoke;
     letter-spacing: 0.25rem;
+    font-size:1.5rem;
 }
 
 .borderRadius10R{
@@ -171,7 +176,7 @@ input:focus, textarea:focus, select:focus{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    backdrop-filter: blur(0px);
+    /*backdrop-filter: blur(0px);*/
 }
 
 .woodBG2  {
@@ -179,7 +184,7 @@ input:focus, textarea:focus, select:focus{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    backdrop-filter: blur(0px);
+    /*backdrop-filter: blur(0px);*/
 }
 
 
@@ -188,7 +193,7 @@ input:focus, textarea:focus, select:focus{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    backdrop-filter: blur(0px);
+   /* backdrop-filter: blur(0px);*/
 }
 
 
@@ -211,6 +216,10 @@ input:focus, textarea:focus, select:focus{
     color:whitesmoke;
 }
 
+.mainContainer{
+    margin-top: 12vh !important;
+}
+
 .stickyWrapper{
     position: sticky;
     position: -webkit-sticky;
@@ -224,6 +233,11 @@ input:focus, textarea:focus, select:focus{
 .cardHalfTinted {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 50%, transparent 50%);
 }
+
+.mainTitleContainer{
+    padding-top: 10vh;
+}
+
 
 .paddingB05{
     padding-bottom: 0.5rem !important;
@@ -244,43 +258,17 @@ input:focus, textarea:focus, select:focus{
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .steps-timeline {
     outline: 1px dashed rgba(255, 0, 0, 0);
 }
+
+
 @media screen and (max-width: 500px) {
     .steps-timeline {
         border-left: 2px solid #3498DB;
         margin-left: 25px;
     }
-}
-@media screen and (min-width: 500px) {
+
     .steps-timeline {
         border-top: 2px solid #3498DB;
         padding-top: 20px;
@@ -288,6 +276,59 @@ input:focus, textarea:focus, select:focus{
         margin-left: 8%;
         margin-right: 8%;
     }
+
+    .steps-one,
+    .steps-two,
+    .steps-three,
+    .steps-four,
+    .steps-five,
+    .steps-six {
+        margin-left: -25px;
+        float: left;
+        width: 12%;
+        margin-top: -50px;
+        padding-bottom: 40px;
+    }
+
+    .steps-one {
+        margin-left: -8%;
+        margin-right: 8%;
+    }
+
+    .steps-two {
+        margin-right: 8%;
+    }
+
+    .steps-three {
+        margin-right: 8%;
+    }
+
+    .steps-four {
+        margin-right: 8%;
+    }
+
+    .steps-six {
+        margin-bottom: -100%;
+    }
+
+    .steps-six {
+        margin-left: 8%;
+        margin-right: -8%;
+    }
+
+    .steps-img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .steps-name {
+        text-align: center;
+    }
+
+    .steps-description {
+        text-align: center;
+    }
+
 }
 .steps-timeline:after {
     content: "";
@@ -303,76 +344,6 @@ input:focus, textarea:focus, select:focus{
 .steps-six {
     outline: 1px dashed rgba(0, 128, 0, 0);
 }
-@media screen and (max-width: 500px) {
-    .steps-one,
-    .steps-two,
-    .steps-three,
-    .steps-four,
-    .steps-five,
-    .steps-six {
-        margin-left: -25px;
-    }
-}
-@media screen and (min-width: 500px) {
-    .steps-one,
-    .steps-two,
-    .steps-three,
-    .steps-four,
-    .steps-five,
-    .steps-six {
-        float: left;
-        width: 12%;
-        margin-top: -50px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .steps-one,
-    .steps-two,
-    .steps-three,
-    .steps-four,
-    .steps-five,
-    .steps-six {
-        padding-bottom: 40px;
-    }
-}
-
-@media screen and (min-width: 500px) {
-    .steps-one {
-        margin-left: -8%;
-        margin-right: 8%;
-    }
-}
-
-@media screen and (min-width: 500px) {
-    .steps-two {
-        margin-right: 8%;
-    }
-}
-
-@media screen and (min-width: 500px) {
-    .steps-three {
-        margin-right: 8%;
-    }
-}
-
-@media screen and (min-width: 500px) {
-    .steps-four {
-        margin-right: 8%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .steps-six {
-        margin-bottom: -100%;
-    }
-}
-@media screen and (min-width: 500px) {
-    .steps-six {
-        margin-left: 8%;
-        margin-right: -8%;
-    }
-}
 
 .steps-img {
     display: block;
@@ -381,12 +352,6 @@ input:focus, textarea:focus, select:focus{
     height: 50px;
     border-radius: 50%;
 }
-@media screen and (max-width: 500px) {
-    .steps-img {
-        float: left;
-        margin-right: 20px;
-    }
-}
 
 .steps-name,
 .steps-description {
@@ -394,23 +359,19 @@ input:focus, textarea:focus, select:focus{
     font-size: 1.2rem;
 }
 
-@media screen and (min-width: 500px) {
-    .steps-name {
-        text-align: center;
-    }
-}
-
 .steps-description {
     overflow: hidden;
 }
-@media screen and (min-width: 500px) {
-    .steps-description {
-        text-align: center;
-    }
+
+
+
+.stickyNavbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    /*position: -webkit-sticky;*/
 }
-
-
-
 
 
 
@@ -428,121 +389,39 @@ MOBILE START
 
  */
 
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-    /* Styles */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .stickyWrapper{
+        margin-left: 42% !important;
+    }
+    .cardImg{
+        height: 14vh !important;
+    }
+    .mainTitleContainer{
+        padding-top: 5vh;
+    }
 }
 
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-    /* Styles */
-}
-
-/* old Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-    /* Styles */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
     .stickyWrapper{
         margin-left: 42% !important;
     }
     .cardImg{
         height: 15vh !important;
     }
-}
-
-/* old Smartphones (landscape) ----------- */
-@media only screen
-and (min-width : 321px) {
-    /* Styles */
 
 }
 
-/* old Smartphones (portrait) ----------- */
-@media only screen
-and (max-width : 320px) {
-    /* Styles */
-}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
 
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-    /* Styles */
-}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-    /* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-    /* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-    /* Styles */
-}
-
-/* Android Tablet (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 800px)
-and (max-device-width : 1280px) {
-    /* Styles */
-}
-
-/* Android Tablet (landscape) ----------- */
-@media only screen
-and (min-device-width : 800px)
-and (max-device-width : 1280px)
-and (orientation : landscape) {
-    /* Styles */
-}
-
-/* Android Tablet (portrait) ----------- */
-@media only screen
-and (min-device-width : 800px)
-and (max-device-width : 1280px)
-and (orientation : portrait) {
-    /* Styles */
-}
-
-/* Desire + Galaxy S2 (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 480px)
-and (max-device-width : 800px) {
-    /* Styles */
-
-}
-
-/* Desire + Galaxy S2 (landscape) ----------- */
-@media only screen
-and (min-device-width : 480px)
-and (max-device-width : 820px)
-and (orientation : landscape) {
-    /* Styles */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
 
 
-}
-
-/* Desire + Galaxy S2 (portrait) ----------- */
-@media only screen
-and (min-device-width : 480px)
-and (max-device-width : 800px)
-and (orientation : portrait) {
-    /* Styles */
-
-}
 
