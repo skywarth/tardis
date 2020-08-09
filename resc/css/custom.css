@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 html {
     scroll-behavior: smooth;
+}
+
+
+.dGrid{
+   display: grid !important;
 }
 
 .speech {
@@ -217,7 +223,7 @@ input:focus, textarea:focus, select:focus{
 }
 
 .mainContainer{
-    margin-top: 12vh !important;
+    margin-top: 20vh;
 }
 
 .stickyWrapper{
@@ -258,17 +264,54 @@ input:focus, textarea:focus, select:focus{
     text-align: center;
 }
 
-.steps-timeline {
-    outline: 1px dashed rgba(255, 0, 0, 0);
+.no-link{
+    color:unset;
+    text-decoration: unset !important;
+}
+
+textarea:focus, input:focus{
+    outline: none !important;
+}
+
+button:focus {
+    outline: none !important;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.steps-timeline {
+    outline: 1px dashed rgba(255, 0, 0, 0);
+}
 @media screen and (max-width: 500px) {
     .steps-timeline {
         border-left: 2px solid #3498DB;
         margin-left: 25px;
     }
-
+}
+@media screen and (min-width: 500px) {
     .steps-timeline {
         border-top: 2px solid #3498DB;
         padding-top: 20px;
@@ -276,59 +319,6 @@ input:focus, textarea:focus, select:focus{
         margin-left: 8%;
         margin-right: 8%;
     }
-
-    .steps-one,
-    .steps-two,
-    .steps-three,
-    .steps-four,
-    .steps-five,
-    .steps-six {
-        margin-left: -25px;
-        float: left;
-        width: 12%;
-        margin-top: -50px;
-        padding-bottom: 40px;
-    }
-
-    .steps-one {
-        margin-left: -8%;
-        margin-right: 8%;
-    }
-
-    .steps-two {
-        margin-right: 8%;
-    }
-
-    .steps-three {
-        margin-right: 8%;
-    }
-
-    .steps-four {
-        margin-right: 8%;
-    }
-
-    .steps-six {
-        margin-bottom: -100%;
-    }
-
-    .steps-six {
-        margin-left: 8%;
-        margin-right: -8%;
-    }
-
-    .steps-img {
-        float: left;
-        margin-right: 20px;
-    }
-
-    .steps-name {
-        text-align: center;
-    }
-
-    .steps-description {
-        text-align: center;
-    }
-
 }
 .steps-timeline:after {
     content: "";
@@ -344,6 +334,76 @@ input:focus, textarea:focus, select:focus{
 .steps-six {
     outline: 1px dashed rgba(0, 128, 0, 0);
 }
+@media screen and (max-width: 500px) {
+    .steps-one,
+    .steps-two,
+    .steps-three,
+    .steps-four,
+    .steps-five,
+    .steps-six {
+        margin-left: -25px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .steps-one,
+    .steps-two,
+    .steps-three,
+    .steps-four,
+    .steps-five,
+    .steps-six {
+        float: left;
+        width: 12%;
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .steps-one,
+    .steps-two,
+    .steps-three,
+    .steps-four,
+    .steps-five,
+    .steps-six {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .steps-one {
+        margin-left: -8%;
+        margin-right: 8%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .steps-two {
+        margin-right: 8%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .steps-three {
+        margin-right: 8%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .steps-four {
+        margin-right: 8%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .steps-six {
+        margin-bottom: -100%;
+    }
+}
+@media screen and (min-width: 500px) {
+    .steps-six {
+        margin-left: 8%;
+        margin-right: -8%;
+    }
+}
 
 .steps-img {
     display: block;
@@ -352,6 +412,12 @@ input:focus, textarea:focus, select:focus{
     height: 50px;
     border-radius: 50%;
 }
+@media screen and (max-width: 500px) {
+    .steps-img {
+        float: left;
+        margin-right: 20px;
+    }
+}
 
 .steps-name,
 .steps-description {
@@ -359,9 +425,24 @@ input:focus, textarea:focus, select:focus{
     font-size: 1.2rem;
 }
 
+@media screen and (min-width: 500px) {
+    .steps-name {
+        text-align: center;
+    }
+}
+
 .steps-description {
     overflow: hidden;
 }
+@media screen and (min-width: 500px) {
+    .steps-description {
+        text-align: center;
+    }
+}
+
+
+
+
 
 
 
@@ -400,6 +481,10 @@ MOBILE START
     }
     .mainTitleContainer{
         padding-top: 5vh;
+    }
+
+    .mainContainer{
+        margin-top: 12vh !important;
     }
 }
 

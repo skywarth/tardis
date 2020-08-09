@@ -1,0 +1,48 @@
+.ranking{
+    cursor:pointer;
+}
+
+button{
+    background-color:lightblue;
+    font-size:20px;
+    border:none;
+    padding:20px;
+    margin:0 auto;
+    display:block;
+}
+
+.banner{
+    background-color:#3d5264;
+    padding:20px;
+}
+
+.step-button:not(.animate){
+    display:none;
+}
+
+.hide{
+    display:none!important;
+}
+
+.show{
+    display:block!important;
+}
+
+#podium-1,
+#podium-2,
+#podium-3{
+    transform-origin:196px 741px;
+}
+
+#value-desktop,
+#value-mobile,
+#value-store{
+    display:none;
+    transition: all 5s;
+}
+
+.banner-text-step2,
+.banner-text-step3{
+    display:none;
+    transition: all 1s;
+}

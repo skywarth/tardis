@@ -1,0 +1,42 @@
+td {
+    vertical-align: bottom; /*Sinon les colonnes ne s'allignent pas vers le bas, logique*/
+    padding: 3px; /*Espacement entre chaques colonnes*/
+}
+#second, #first, #third {
+    width: 100px; /* Largeur de chaques colonnes*/
+}
+#first {
+    height: 200px;
+    background: #C98910;
+}
+#second {
+    height: 150px;
+    background: #A8A8A8;
+}
+#third {
+    height: 100px;
+    background: #965A38;
+}
+.text-center{
+    text-align:center;
+    font-size:40px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight:900;
+}
+.text-inside{
+    text-align:center;
+    padding-top:20px;
+}
+.player{
+    font-size:20px;
+}
+
+.points{
+    padding-top:14px;
+    font-size:14px;
+    display: block;
+}
+
+#podium{
+    margin: 0 auto
+}
